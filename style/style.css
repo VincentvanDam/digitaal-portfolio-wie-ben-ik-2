@@ -1,0 +1,188 @@
+body{
+	background-color: #404D59;
+}
+
+header{
+	background-color: #333E47;
+	height: 380px;
+}
+
+img.project{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51,62,71,0.5);
+    height: 45px;
+
+}
+
+li {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-right:3px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgba(246, 238, 238, 0.1);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    background-color: #303A43;
+    width: 245px;
+    height: 160px;
+    border: 1px solid;
+    border-color: #404D59;
+    border-radius: 5px;
+}
+
+img.screens{
+	margin: 10px;
+	width: 225px;
+	height: 140px;	
+	opacity: 0.7;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  background-color: #303A43;
+  width: 245px;
+  height: 160px;
+  border: 1px solid;
+  border-color: #404D59;
+  border-radius: 5px;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+  background-color: #303A43;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 225px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 143px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: #939BA0;
+  font-size: 20px;
+  font-family: verdana;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.footer{
+	width: 40px;
+	height: 40px;
+	opacity: 0.5;
+	margin-top: 10px;
+	margin-left: 225px;
+}
+
+.footer:hover{
+	opacity: 1;
+}
+
+footer{
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	background-color: #333E47;
+}
+
+.cv{
+    width: 750px;
+    height: 650px;
+    font-family: verdana;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(246, 238, 238, 0.1);
+}
+
+@font-face{
+	font-family: rainbow-bridge;
+	src: url(RainbowBridgePersonalUse.ttf);
+}
+
+.name{
+	font-family: rainbow-bridge;
+	font-size: 30px;
+	margin: 0;
+	padding: 10px;
+	color: #8A9095;
+}
+
+#profielfoto{
+	width: 150px;
+	height: 200px;
+	padding: 10px 0 40px 140px;
+}
+
+.homeinfo{
+	float: right;
+	text-align: left;
+	margin-right: 350px;
+	font-family: verdana;
+	color: #8A9095;
+}
